@@ -1,0 +1,133 @@
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --bg-card: #FFFFFF;
+  --tt-button: #E2942D;
+  --bg-text: #E6E6E6;
+  --tt-text: #000000;
+  --tt-title: #34355B;
+
+}
+
+body {
+  background: linear-gradient(287.56deg, #247ea8 0%, #03378a 100%);
+  display: grid;
+  place-items: center;
+  height: 98vh;
+}
+
+button , p {
+  font-family: "DM Sans", sans-serif;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.screen1 {
+  background: var(--bg-card);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: var(--tt-title);
+  font-size: 1.5rem;
+  padding: 4rem 6rem;
+  border-radius: .5rem;
+  box-shadow: 6px 5px 17px 5px rgba(0,0,0,0.75);
+  max-width: 40rem;
+  max-height: 37rem;
+}
+
+.screen1 img:hover {
+  animation: treme 0.4s ease-in-out infinite;
+  cursor: pointer;
+}
+
+.screen2 {
+  background: var(--bg-card);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  color: var(--tt-title);
+  font-size: 1.5rem;
+  padding: 6rem 6rem;
+  border-radius: .5rem;
+  box-shadow: 6px 5px 17px 5px rgba(0,0,0,0.75);
+  max-width: 40rem;
+
+}
+
+.screen2 p {
+  background: var(--bg-text);
+  padding-top: .5rem;
+  font-family: "Dancing Script", cursive;
+  font-size: 2.4rem;
+  box-shadow: 1px 1px 0px 2px rgba(207,207,207,1);
+  animation: message 2s ease-in;
+}
+
+.screen2 button {
+  background-color: var(--tt-button);
+  color: #FFFFFF;
+  font-weight: bold;
+  padding: 1rem .4rem;
+  width: 15rem;
+  margin-left: 6rem;
+  margin-top: 1rem;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+button:hover {
+  scale: 1.1;
+}
+
+.hide {
+  display: none;
+}
+
+
+
+@keyframes treme {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(2deg);
+  }
+  40% {
+    transform: rotate(-1deg);
+  }
+  60% {
+    transform: rotate(2deg);
+  }
+  80% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes message {
+  0% {
+    transform: translateY(30rem);
+    scale: 0.3;
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    scale: 1;
+    opacity: 1;
+  }
+}
